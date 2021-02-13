@@ -4,12 +4,9 @@ import bs4
 from bs4 import BeautifulSoup as bs
 import lxml
 
-from flask_cors import CORS
-
 
 
 app = Flask(__name__)
-CORS(app)
 app.config['JSON_SORT_KEYS'] = False
 
 def wordMeaning(url,headers):
